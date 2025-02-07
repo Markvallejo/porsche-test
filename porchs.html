@@ -1,0 +1,206 @@
+<html >
+  <!-- Configuracion inicial para un documento Html -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title>Porsche Winner</title>
+  </head>
+<link rel="shortcut icon" href="favicon.ico">
+<style>
+  /* Aqui se definen los estilos para toda la pagina web */
+  body {
+    background-color:rgba(186, 218, 230, 0.64); 
+  }
+  /* Aplica un borde redondeado, color de fondo azul oscuro, texto blanco, 
+  margen superior, alineación centrada y relleno interno. */
+  .menu-principal {
+    border-radius: 10px;
+    background-color: #165b75;
+    color: white;
+    margin: 10px auto 0;
+    text-align: center;
+    padding: 10px;
+    height: 60px;
+    width: 1000px;
+  }
+  /* Elimina los puntos de la lista y los márgenes y rellenos predeterminados.
+    Agregar un acomodo de lista horizontal, usando flexbox, con un espacio entre elementos de 20px.
+  */
+  .menu-principal ul {
+    align-items: center;
+    list-style-type: none;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  /* Estilo de los elementos de la lista del menu */
+  .menu-principal ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  /* Estilos para las secciones de la pagina */
+  .seccion {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+  }
+  /* Estilos para la seccion de introduccion */
+  .seccion-intro {
+    padding-top: 40px;
+    margin: 0 auto;
+  }
+  /* Estilos para el titulo de la pagina */
+  .title {
+    color: #3a3c3c;
+    text-align: center;
+    font-size: 42px;
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 0px auto 40px;
+  }
+  /* Estilos para la portada de la pagina */
+  .portada {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .portada img {
+    border-radius: 10px;
+    width: 100%;
+  }
+  /* Estilos para la seccion de Porsche, con su descripcion y lista numerada */
+  .description  {
+    color: black;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 0px auto 40px;
+  }
+  .lista-numerada {
+    color: #151a64;
+    font-size: 18px;
+    
+  }
+  /* Estilos para la tabla */
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 15px;
+  }
+  td {
+    vertical-align: center;
+    padding: 10px;
+    border: 1px solid #0f1898;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+  p {
+    color: #151a64;
+    line-height: 1.5;
+  }
+  /* Estilos para el link que lleva a la seccion final */
+  .link-final {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    color: #151a64;
+    margin-top: 40px;
+    margin-bottom: 100px;
+  }
+  /* Estilos para la imagen que lleva a la pagina web */
+  .imagen-link {
+    margin-top: 40px;
+  }
+  /* Estilos para la seccion de video */
+  .seccion-video {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .seccion-video video {
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  /* Estilos para el pie de pagina */
+  footer {
+    text-align: center;
+    margin: 20px;
+  }
+
+</style>
+<body>
+  <!-- Menu -->
+  <nav class="menu-principal">
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#porsche" >Porsche</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="#contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+  <!-- Introduction de la pagina -->
+  <section id="inicio" class="seccion seccion-intro">
+    <h1 class="title">Bienvenidos a la expocision de carros de carreras de la marca Porsche</h1>
+    <div class="portada">
+      <image src="porchs.gif" width="900px" />
+    </div>
+  </section>
+  <!-- Seccion de Porchs -->
+   <section id="porsche" class="seccion seccion-porsche">
+     <p class="description">Reconocible desde lejos, de día o de noche: el típico diseño de cuatro puntos Porsche de los faros Matrix LED controlados por cámara y los faros HD Matrix LED de serie en los modelos Turbo.</p>
+    <!-- Lista numerada de opciones -->
+    <ol class="lista-numerada">
+      <li><strong>Porsche Cayenne,</strong> excelente opcion, tu mejor decicion, se tú, se un porsche!!!</li>
+      <li><strong>Porsche Macan,</strong> se trata ser ser influencia no solo influenciar.</li>
+      <li><strong>Porsche Taycan,</strong> elegancia sin limite.</li>
+    </ol>
+    <!-- Tabla con dos columnas y tres filas, para mostrar una imagen y su descripcion al lado -->
+    <table   >
+      <tr>
+        <td><img src="porsche-cayenne.png" width="350px" /></td>
+        <td><p><strong>El Cayenne</strong> es un auto de lujo de tamaño medio que se lanzó en 2002. Es el primer SUV de Porsche y se ha convertido en uno de los modelos más populares de la marca. El Cayenne es un vehículo de alto rendimiento que ofrece una excelente combinación de rendimiento, comodidad y lujo. El Cayenne está disponible en varias versiones, incluidas el Cayenne, el Cayenne S, el Cayenne GTS, el Cayenne Turbo y el Cayenne Turbo S. El Cayenne es un vehículo de alto rendimiento que ofrece una excelente combinación de rendimiento, comodidad y lujo. El Cayenne está disponible en varias versiones, incluidas el Cayenne, el Cayenne S, el Cayenne GTS, el Cayenne Turbo y el Cayenne Turbo S.</p></td>
+      </tr>
+      <tr>
+        <td><p><strong>El Macan</strong> es un auto compacto de lujo que se lanzó en 2014. Es el segundo SUV de Porsche y se ha convertido en uno de los modelos más populares de la marca. El Macan es un vehículo de alto rendimiento que ofrece una excelente combinación de rendimiento, comodidad y lujo. El Macan está disponible en varias versiones, incluidas el Macan, el Macan S, el Macan GTS, el Macan Turbo y el Macan Turbo S. El Macan es un vehículo de alto rendimiento que ofrece una excelente combinación de rendimiento, comodidad y lujo. El Macan está disponible en varias versiones, incluidas el Macan, el Macan S, el Macan GTS, el Macan Turbo y el Macan Turbo S.</p></td>
+        <td><img src="porsche-macan.png" width="350px" /></td>
+      </tr>
+      <tr>
+        <td><img src="porsche-taycan.png" width="350px" /></td>
+        <td><p><strong>El Taycan</strong> es un sedán deportivo eléctrico de lujo que se lanzó en 2019. Es el primer vehículo eléctrico de Porsche y se ha convertido en uno de los modelos más populares de la marca. El Taycan es un vehículo de alto rendimiento que ofrece una excelente combinación de rendimiento, comodidad y lujo. El Taycan está disponible en varias versiones, incluidas el Taycan, el Taycan S, el Taycan GTS, el Taycan Turbo y el Taycan Turbo S. El Taycan es un vehículo de alto rendimiento que ofrece una excelente combinación de rendimiento, comodidad y lujo. El Taycan está disponible en varias versiones, incluidas el Taycan, el Taycan S, el Taycan GTS, el Taycan Turbo y el Taycan Turbo S.</p></td>
+      </tr>
+    </table>
+    <!-- Link que lleva a la seccion del final -->
+    <a class="link-final" href="#final">Ver sucursales</a>
+    <!-- Imagen con link que te lleva a la pagina web -->
+    <h3 align="center" >Para ver más sobre estos modelos, puedes visitar el sitio web dando click en la siguente imagen 👇</h3>
+    <a href="https://www.porsche.com/latin-america-es/models/taycan/taycan-models/taycan/" target="_blank">
+      <img class="imagen-link" src="toycan-link.png" width="400px" />
+    </a>
+  </section>
+  <!-- Seccion del video -->
+  <section id="video" class="seccion seccion-video">
+    <h2 class="title-video">Descubra más sobre Porsche</h2>
+    <video controls preload="auto" autoplay muted >
+      <source src="video-porsche.mp4" type="video/mp4">
+   </section>  
+  <!-- Seccion del audio -->
+  <section class="seccion seccion-audio">
+    <h2 class="title-audio">Escucha el sonido del Porsche</h2>
+    <p>Disfruta del impresionante sonido del motor de un Porsche. Haz clic en el reproductor de abajo para escuchar.</p>
+    <audio controls>
+      <source src="sonido-porsche.mp3" type="audio/mpeg">
+    </audio>
+  </section>
+</body>
+<footer>
+  <p>© 2021 Porsche Winner. Todos los derechos reservados.</p>
+</footer>
+</html>
