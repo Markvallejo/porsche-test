@@ -21,7 +21,7 @@
     text-align: center;
     padding: 10px;
     height: 60px;
-    width: 1000px;
+    max-width: 1000px;
   }
   /* Elimina los puntos de la lista y los márgenes y rellenos predeterminados.
     Agregar un acomodo de lista horizontal, usando flexbox, con un espacio entre elementos de 20px.
@@ -128,6 +128,45 @@
     border-radius: 10px;
     width: 100%;
   }
+  /* Estilos para la marquesina */
+  .marquee-text {
+    font-size: 24px;
+    color: #151a64;
+    font-weight: 700;
+  }
+  .image-marquee {
+    border-radius: 5px;
+    margin: 0
+  }
+  /* Estilos para la seccion de formulario */
+  .contenedor-campos {
+    display: inline-grid;
+    margin-bottom: 20px;
+    width: 50%;
+
+  }
+  .input-text  {
+    color: #151a64;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #0f1898;
+  }
+  .boton-formulario {
+    background-color: #165b75;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 0 auto 20px;
+    width: 200px;
+  }
 
   /* Estilos para el pie de pagina */
   footer {
@@ -143,7 +182,8 @@
       <li><a href="#inicio">Inicio</a></li>
       <li><a href="#porsche" >Porsche</a></li>
       <li><a href="#video">Video</a></li>
-      <li><a href="#contacto.html">Contacto</a></li>
+      <li><a href="#ubicación">Ver Mapa</a></li>
+      <li><a href="#contacto">Contacto</a></li>
     </ul>
   </nav>
   <!-- Introduction de la pagina -->
@@ -178,7 +218,7 @@
       </tr>
     </table>
     <!-- Link que lleva a la seccion del final -->
-    <a class="link-final" href="#final">Ver sucursales</a>
+    <a class="link-final" href="#final">Ir abajo</a>
     <!-- Imagen con link que te lleva a la pagina web -->
     <h3 align="center" >Para ver más sobre estos modelos, puedes visitar el sitio web dando click en la siguente imagen 👇</h3>
     <a href="https://www.porsche.com/latin-america-es/models/taycan/taycan-models/taycan/" target="_blank">
@@ -199,8 +239,75 @@
       <source src="sonido-porsche.mp3" type="audio/mpeg">
     </audio>
   </section>
+  <!-- Seccion marquesina -->
+  <section class="seccion">
+    <marquee behavior="alternate" direction="left" scrollamount="11" maxWidth="1000px">
+      <img src="porsche-marquee.jpg" width="200px" class="image-marquee"/>
+    </marquee>
+    <marquee behavior="alternate" direction="right" scrollamount="9"  maxWidth="1000px">
+      <p class="marquee-text">Porsche es felicidad y comodidad</p>
+    </marquee>
+  </section>
+  <!-- Seccion Mapa -->
+  <section id="ubicación" class="seccion ">
+    <h2>Ubicación de Porsche</h2>
+    <p style="font-size: 20; font-weight: 400;">Encuentra la ubicación de nuestro concesionario Porsche en el mapa a continuación:</p>
+    <!--  Aqui se carga el mapa de Google con las coordenadas de Saltillo-->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.707621674391!2d-100.99817468499992!3d25.42321098379714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868812b1b1b1b1b1%3A0x1b1b1b1b1b1b1b1b!2sSaltillo%2C%20Coahuila%2C%20Mexico!5e0!3m2!1sen!2sus!4v1633071234567!5m2!1sen!2sus"
+      width="100%"
+      max-width="1000px"
+      height="450"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+  </section>
+  <!-- Seccion de Video e imagen de internet, el video de youtube y la imagen del sitio de porsche -->
+  <section class="seccion">
+    <h2 style="text-align: center;" >Conoce el nuevo Porsche 911 Sport Classic</h2>
+    <p style="font-size: 20px;">
+      A continuación podras ver el antes y despues de este increible clasico de Porsche
+    </p>
+    <iframe 
+      width="100%" 
+      max-width="1000px" 
+      height="450px" 
+      src="https://www.youtube.com/embed/mmzn77xOCe0?si=5PlulSryqRzkYKHw" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" r
+      eferrerpolicy="strict-origin-when-cross-origin"
+     allowfullscreen>
+    </iframe>
+    <img 
+      style="margin-top: 100px;"
+      src="https://images-porsche.imgix.net/-/media/553D922571104D23995E733A568C1B93_C6920E7EFF1C4E888910657D8E128A4D_CZ25W25IX0011-911-carrera-t-front?w=407&q=45&dpr=2&auto=format" 
+      height="auto"
+      width="600px"
+      />
+  </section>
+  <!-- Seccion Contacto -->
+  <section id="contacto" class="seccion">
+    <h2>Contacto</h2>
+    <p style="font-size: 20px;">Para más información sobre Porsche, por favor contáctanos en:</p>
+    <form >
+      <div class="contenedor-campos">
+        <label class="input-text" for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+      <div class="contenedor-campos">
+        <label class="input-text" for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50" required></textarea>
+      </div>
+      <div class="contenedor-campos">
+        <button class="boton-formulario" type="submit">Enviar</button>
+        <button class="boton-formulario" type="reset">Cancelar</button>
+      </div>
+    </form>
+  </section>
 </body>
-<footer>
+<footer id="final">
   <p>© 2021 Porsche Winner. Todos los derechos reservados.</p>
 </footer>
 </html>
